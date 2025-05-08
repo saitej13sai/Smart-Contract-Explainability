@@ -5,9 +5,9 @@ import requests
 from web3 import Web3
 from openai import OpenAI
 
-openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+openai_client = OpenAI(api_key=os.getenv("OPENAI API KEY"))
 
-INFURA_URL = f"https://sepolia.infura.io/v3/{os.getenv('INFURA_API_KEY')}"
+INFURA_URL = f"https://sepolia.infura.io/v3/{os.getenv("INFURA API KEY")}"
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 PROMPT_TEMPLATE = """
